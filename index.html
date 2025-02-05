@@ -1,0 +1,123 @@
+<!DOCTYPE htmlcartIcone>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+<!-- normalize css file  -->
+ <link rel="stylesheet" href="./CSS/normalize.css">
+ <!-- main css file -->
+  <link rel="stylesheet" href="./CSS/main.css">
+  <!-- google fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Kumbh+Sans:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <span class="overlay"></span>
+<!-- start header -->
+ <header>
+  <div class="container align-flex">
+    <div class="menue" id="menue">
+      <img  src="./images/icon-menu.svg" alt="">
+    </div>
+    <img class="logo" src="./images/logo.svg" alt="">
+    <nav class="align-flex">
+      <ul class="align-flex " id="sideBar">
+        <li class="close" id="close"><img src="./images/icon-close.svg" alt=""></li>
+        <li>Collections</li>
+        <li>Men</li>
+        <li>Women</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+      <div class="headerIcons align-flex">
+        <div class="cart">
+          <div>
+            <img id="cartIcone" src="./images/icon-cart.svg" alt="">
+          <span class="cartCount"></span>
+          <div class="cartBox none">
+            <h2>cart</h2>
+            <div class="products">
+              <span class="empText">Your Cart Is Empty</span>
+              <!-- <div class="prod">
+                <img src="./images/image-product-1-thumbnail.jpg">
+                <div class="content">
+                  <h3>Fall Limited Editi on Sneakers</h3>
+                  <div>
+                    <span class="cartPrice">$125.00</span>
+                    <span class="num">x 3</span>
+                    <span class="total">$375.00</span>
+                  </div>
+                </div>
+                <img src="./images/icon-delete.svg" alt="">
+              </div> -->
+              <button class="checkout none">Checkout</button>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <img src="./images/image-avatar.png" alt="">
+      </div>
+
+    </nav>
+  </div>
+ </header>
+<!-- end header -->
+ <!-- start landing -->
+  <main class="">
+    <div class="container align-flex">
+    <section class="sec1">
+        <div class="mainImage">
+          <img src="./images/image-product-1.jpg" alt="">
+        </div>
+        <div class="imageSlider align-flex">
+          <img src="./images/image-product-1-thumbnail.jpg" class="active" data-img="./images/image-product-1.jpg" alt="">
+          <img src="./images/image-product-2-thumbnail.jpg" data-img="./images/image-product-2.jpg" alt="">
+          <img src="./images/image-product-3-thumbnail.jpg" data-img="./images/image-product-3.jpg" alt="">
+          <img src="./images/image-product-4-thumbnail.jpg" data-img="./images/image-product-4.jpg" alt="">
+        </div>
+        <div class="right"><img src="./images/icon-next.svg" alt=""></div>
+        <div class="left"><img src="./images/icon-previous.svg" alt=""></div>
+    </section>
+    <section class="sec2 ">
+      <span>Sneaker Company</span>
+      <h1>Fall Limited Edition Sneakers</h1>
+      <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+          durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+      <div class="priceDiv align-flex">
+        <div class="price">$125.00</div>
+        <div class="offer">50%</div>
+      </div>
+      <span class="del"><del>$250</del></span>
+      <div class="buttons align-flex">
+        <div class="counter align-flex">
+          <img src="./images/icon-minus.svg" id="minusCount" alt="">
+          <span class="count">0</span>
+          <img src="./images/icon-plus.svg" id="plusCount" alt="">
+        </div>
+        <button id="submit"; data-price="125.00" data-text="Fall Limited Edition Sneakers" data-img="./images/image-product-1-thumbnail.jpg" class="align-flex"><img src="./images/icon-cart.svg" alt=""> Add cart</button>
+      </div>
+    </div>
+    </section>
+  </main>
+ <!-- end landing -->
+  <!-- Sneaker Company
+
+  
+
+
+  $125.00
+  50%
+  $250.00
+
+  0
+  Add to cart -->
+  <!-- main js file -->
+   <script src="./JS/main.js"></script>
+</body>
+</html>
