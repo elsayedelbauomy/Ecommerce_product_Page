@@ -120,6 +120,7 @@ header {
             & .cartBox {
                 padding: 10px 15px;
                 left: 50%;
+                z-index: 50;
                 box-shadow: 4px 6px 11px  hsla(0, 0%, 0%, 0.356);
                 transform: translateX(-50%);
                 position: absolute;
