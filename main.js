@@ -14,7 +14,7 @@ document.getElementById("close").onclick = function () {
 }
 
 // landing page chage images 
-const images = ["../images/image-product-1.jpg","../images/image-product-2.jpg","../images/image-product-3.jpg","../images/image-product-4.jpg"]
+const images = ["./images/image-product-1.jpg","./images/image-product-2.jpg","./images/image-product-3.jpg","./images/image-product-4.jpg"]
 const imageSlider = document.querySelectorAll(".imageSlider img");
 function changeImage(imageSlider) {
   imageSlider.forEach((image, i) => {
@@ -38,11 +38,11 @@ const mainImage = document.querySelector(".mainImage img");
   let nextDiv = document.createElement("div");
   let arrowRight = document.createElement("img");
   nextDiv.id = "next";
-  arrowRight.src = "../images/icon-next.svg";
+  arrowRight.src = "./images/icon-next.svg";
   let prevDiv = document.createElement("div");
   let arrowLeft = document.createElement("img");
   prevDiv.id = "prev";
-  arrowLeft.src = "../images/icon-previous.svg";
+  arrowLeft.src = "./images/icon-previous.svg";
   let close = document.createElement("div");
   close.textContent = "X";
   close.id = "closeBox";
@@ -192,7 +192,7 @@ submit.addEventListener("click", function () {
     content.append(h3);
     content.append(div);
     let deleted = document.createElement("img");
-    deleted.src = '../images/icon-delete.svg';
+    deleted.src = './images/icon-delete.svg';
     deleted.className = "delete"
     prodDiv.append(thumbnailImage);
     prodDiv.append(content);
